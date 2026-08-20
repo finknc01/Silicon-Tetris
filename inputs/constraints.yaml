@@ -1,0 +1,35 @@
+# Fictional starting constraints. Each later mission may add or change one
+# dimension and force the capacity plan to be recomputed.
+constraints:
+  total_budget_usd: 250000
+  rack_power_limit_kw: 20
+  usable_rack_units: 42
+  minimum_network_gbps_per_node: 100
+  shared_storage_capacity_tb: 40
+  shared_storage_peak_read_gbps: 12
+  shared_storage_peak_write_gbps: 8
+  reserve_capacity_percent: 15
+  planning_horizon_months: 18
+
+policy:
+  critical_workloads_must_fit: true
+  high_priority_workloads_should_fit: true
+  allow_overcommit_gpu_memory: false
+  require_power_headroom: true
+  require_budget_headroom: true
+
+scenario_changes:
+  # Do not apply these at the start. Use them later to test whether the model
+  # changes its recommendation predictably.
+  - name: power-cut
+    change: rack_power_limit_kw
+    from: 20
+    to: 15
+  - name: budget-cut
+    change: total_budget_usd
+    from: 250000
+    to: 190000
+  - name: workload-growth
+    change: workload_demand_multiplier
+    from: 1.0
+    to: 1.35

@@ -1,0 +1,48 @@
+# Entirely fictional starter hardware catalog for planner development.
+# Replace or extend with dated public specifications later if the mission calls
+# for a real-product scenario. Do not present these as vendor products.
+hardware:
+  - name: LabGPU-24
+    category: gpu
+    vram_gb: 24
+    max_power_w: 250
+    relative_compute_score: 1.0
+    unit_cost_usd: 2500
+
+  - name: LabGPU-48
+    category: gpu
+    vram_gb: 48
+    max_power_w: 350
+    relative_compute_score: 1.8
+    unit_cost_usd: 6000
+
+  - name: LabGPU-80
+    category: gpu
+    vram_gb: 80
+    max_power_w: 700
+    relative_compute_score: 3.2
+    unit_cost_usd: 18000
+
+node_profiles:
+  - name: compact-2gpu
+    gpu_model: LabGPU-48
+    gpu_count: 2
+    non_gpu_power_w: 500
+    rack_units: 2
+    network_gbps: 100
+    local_storage_tb: 4
+    base_cost_usd: 7000
+
+  - name: dense-4gpu
+    gpu_model: LabGPU-80
+    gpu_count: 4
+    non_gpu_power_w: 900
+    rack_units: 4
+    network_gbps: 200
+    local_storage_tb: 8
+    base_cost_usd: 14000
+
+rules:
+  - All starter prices and performance scores are fictional.
+  - Calculate total node power from GPU and non-GPU components rather than storing a hidden answer.
+  - Document whether future real-product values are measured, vendor-specified, or estimated.

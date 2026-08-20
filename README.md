@@ -2,6 +2,17 @@
 
 > **The workloads keep coming, the rack has limits, and every “perfect” GPU plan breaks something else. Fit the compute puzzle before budget, power, memory, network, or storage runs out.**
 
+## Project status
+
+| Field | Current state |
+|---|---|
+| **Status** | **Planned — workload modeling begins early; final planner later in the roadmap** |
+| **Current stage** | Campaign authored; no capacity recommendation, cost model, or sizing result is claimed complete |
+| **Lab environment** | Laptop-based modeling with transparent workload assumptions and cited hardware specifications |
+| **Evidence rule** | Separate measured values, vendor specifications, assumptions, estimates, and deliberately simplified models |
+| **Last plan sync** | 2026-08-19 |
+| **License** | No open-source license is granted unless an explicit license is added later |
+
 ## Skills you will build
 
 - GPU capacity planning and workload sizing

@@ -2,15 +2,10 @@
 
 > **The workloads keep coming, the rack has limits, and every “perfect” GPU plan breaks something else. Fit the compute puzzle before memory, power, network, storage, or budget runs out.**
 
-## Project status
+## Lab environment
 
-| Field | Current state |
-|---|---|
-| **Status** | **Planned — workload modeling begins early; final planner later in the roadmap** |
-| **Current stage** | Campaign authored; no capacity recommendation, cost model, or sizing result is claimed complete |
-| **Lab environment** | Laptop-based modeling with explicit workload assumptions and dated/cited hardware specifications |
-| **Evidence rule** | Separate measured values, vendor specifications, assumptions, estimates, and simplified models |
-| **Last plan sync** | 2026-08-19 |
+- **Environment:** Laptop-based modeling with explicit workload assumptions and dated/cited hardware specifications.
+- **Evidence rule:** Separate measured values, vendor specifications, assumptions, estimates, and simplified models.
 
 ## Purpose
 
@@ -33,7 +28,7 @@ The project starts with manual reasoning and evolves toward a small reproducible
 
 ## Capacity campaign
 
-The files in [`missions/`](missions/) are authoritative. Mission 03 network constraints can be deferred if the Weeks 19–20 physical-infrastructure block is already full; it should be completed before the final model.
+The files in [`missions/`](missions/) are authoritative. Mission 03 network constraints can be deferred if the associated physical-infrastructure block is already full; it should be completed before the final model.
 
 | Mission | Constraint added | Primary outcome |
 |---|---|---|
